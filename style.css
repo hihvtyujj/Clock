@@ -6,38 +6,64 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #121212;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    margin: 0;
 }
 
-.clock-container {
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
     text-align: center;
 }
 
-.clock {
+.container {
+    width: 45%;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.display {
     font-size: 3em;
+    margin-bottom: 20px;
     background-color: #1e1e1e;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    transition: all 0.5s ease;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-#time {
-    display: block;
-    font-weight: bold;
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* Optional responsiveness */
-@media (max-width: 600px) {
-    .clock {
-        font-size: 2.5em;
-        padding: 20px;
-    }
+button:hover {
+    background-color: #3700b3;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #6200ea;
+    background-color: #1e1e1e;
+    color: white;
 }
